@@ -66,18 +66,6 @@ module.exports = {
                 test: /\.(woff|woff2|eot|ttf|otf)$/i,
                 type: 'asset/resource',
             },
-            /** Файлы CSV */
-            {
-                test: /\.(csv|tsv)$/i,
-                use: ['csv-loader'],
-                // npm i csv-loader -D
-            },
-            /** Файлы XML */
-            {
-                test: /\.xml$/i,
-                use: ['xml-loader'],
-                // npm i xml-loader -D
-            },
         ],
     },
     // Вебпак плагины используются для настройки процесса сборки.
