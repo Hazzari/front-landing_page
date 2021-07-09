@@ -107,6 +107,11 @@ button:focus {
     font-weight: 600;
 }
 
+.nav__item-active > a {
+    /* Style for "Service" */
+    color: #061e37;
+}
+
 .promo__sign button {
     padding: 6px 20px;
     background-color: transparent;
