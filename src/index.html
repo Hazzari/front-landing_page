@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <title>landing page</title>
     <!--    <title><%= htmlWebpackPlugin.options.title %></title>-->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+          integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 <body>
 <section class="promo">
@@ -50,17 +54,131 @@
                     laboris nisi ut aliquip ex ea commodo
                     consequat.
                 </div>
-                <div class="promo__buttons">
-                    <button>Buy now</button>
-                    <button>Try for free</button>
+                <div class="promo__btns">
+                    <button class="promo__btn promo__btn_black">Buy now
+                    </button>
+                    <button class="promo__btn promo__btn_white">Try for free
+                    </button>
                 </div>
             </div>
             <div class="promo__video">
-                <video width="600" height="320" src="video/promo.mp4" poster="video/poster.png"></video>
+                <video width="600" height="320" src="video/promo.mp4"
+                       poster="video/poster.png"></video>
+                <div class="promo__play">
+                    <div>
+                        <i class="fas fa-play"></i>
+                    </div>
+
+                    Watch the video
+
+                </div>
             </div>
         </div>
-
     </div>
+</section>
+<section class="useful">
+    <div class="container">
+        <h2 class="title">Easy & Useful</h2>
+        <div class="subtitle">Project Management Tool</div>
+        <div class="descr">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud
+        </div>
+        <div class="useful__content">
+            <div class="useful__item">
+                <div class="useful__icons">
+                    <i class="far fa-calendar-alt"></i>
+                </div>
+                <div class="useful__text">
+                    <h3 class="useful__title">Title Goes Here</h3>
+                    <div class="useful__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+            <div class="useful__item">
+                <div class="useful__icons">
+                    <i class="fas fa-user-tie"></i>
+                </div>
+                <div class="useful__text">
+                    <h3 class="useful__title">Title Goes Here</h3>
+                    <div class="useful__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+            <div class="useful__item">
+                <div class="useful__icons">
+                    <i class="fas fa-fire-extinguisher"></i>
+                </div>
+                <div class="useful__text">
+                    <h3 class="useful__title">Title Goes Here</h3>
+                    <div class="useful__descr">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit, sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <button class="useful__btn">Get started</button>
+    </div>
+
+
+</section>
+<section class="progress">
+    <div class="progress__item progress__item-business">
+        <div class="progress__wrap">
+            <div class="progress__icon">
+                <i class="far fa-building"></i>
+            </div>
+            <div class="progress__text">
+                12000+<br>
+                Business
+            </div>
+        </div>
+    </div>
+    <div class="progress__item progress__item-downloads">
+        <div class="progress__wrap">
+            <div class="progress__icon">
+                <i class="fas fa-download"></i>
+            </div>
+            <div class="progress__text">
+                60000+<br>
+                Downloads
+            </div>
+        </div>
+    </div>
+    <div class="progress__item progress__item-installs">
+        <div class="progress__wrap">
+            <div class="progress__icon">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="progress__text">
+                30000+<br>
+                Free Installs
+            </div>
+        </div>
+    </div>
+    <div class="progress__item progress__item-pro_users">
+        <div class="progress__wrap">
+            <div class="progress__icon">
+                <i class="fas fa-arrow-circle-down"></i>
+            </div>
+            <div class="progress__text">
+                40000+ <br>
+                Pro Users
+            </div>
+        </div>
+    </div>
+
 </section>
 </body>
 </html>
