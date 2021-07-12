@@ -1,7 +1,11 @@
 import 'bootstrap/dist/css/bootstrap-reboot.css';
+import 'swiper/swiper-bundle.css';
+
 import '../css/style.css';
 
 import UI from "./config/ui.config";
+import slider from "./slider";
+
 
 const {tabs,} = UI;
 window.addEventListener("DOMContentLoaded", () => {
@@ -10,6 +14,17 @@ window.addEventListener("DOMContentLoaded", () => {
     tabs.forEach(elem => {
         onClick(elem);
     });
+    slider({
+        container: '.carousel',
+        slide: '.carousel__element',
+        prevArrow: '.carousel__arrow-left',
+        nextArrow: '.carousel__arrow-right',
+
+        wrapper: '.carousel__hider',
+        field: '.carousel__list',
+
+    });
+
 
 // handlers
 
@@ -27,3 +42,6 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 });
+
+
+
