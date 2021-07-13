@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap-reboot.css';
-import 'swiper/swiper-bundle.css';
 
 import '../css/style.css';
 

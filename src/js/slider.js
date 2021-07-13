@@ -8,7 +8,6 @@ function slider({container, slide, nextArrow, prevArrow, wrapper, field}) {
         slidesField = document.querySelector(field),
         width = window.getComputedStyle(slidesWrapper).width;
 
-    console.log(width);
 
 
     let slideIndex = 1;
