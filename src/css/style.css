@@ -615,8 +615,6 @@ h1.promo__title {
 .carousel__element {
     width: 800px;
     text-align: center;
-    box-shadow: 0 0 18px 18px white inset;
-
     display: block;
     flex: 0 0 auto;
 }
