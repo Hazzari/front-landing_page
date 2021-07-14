@@ -46,6 +46,44 @@ button:focus, div:focus, input:focus, textarea:focus {
     color: #061e37;
 }
 
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__item {
+    margin: 0 25px;
+    opacity: 0.75;
+    transition: opacity 0.3s ease;
+}
+
+.nav__item:hover {
+    opacity: 1;
+}
+
+.nav__item > a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.nav__item-active > a {
+    /* Style for "Service" */
+    color: #061e37;
+}
+
+.nav__item_margin-none {
+    margin-right: 0;
+}
+
 /*PROMO SECTION*/
 .promo {
     min-height: 750px;
@@ -82,38 +120,6 @@ button:focus, div:focus, input:focus, textarea:focus {
     font-style: normal;
     letter-spacing: normal;
     line-height: normal;
-}
-
-.nav {
-    display: flex;
-    align-items: center;
-}
-
-.nav__list {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.nav__item {
-    margin: 0 25px;
-    opacity: 0.75;
-    transition: opacity 0.3s ease;
-}
-
-.nav__item:hover {
-    opacity: 1;
-}
-
-.nav__item > a {
-    color: #ffffff;
-    font-weight: 600;
-}
-
-.nav__item-active > a {
-    /* Style for "Service" */
-    color: #061e37;
 }
 
 .promo__sign button {
@@ -807,4 +813,63 @@ h1.promo__title {
     transition: all 0.3s ease;
     background-color: #339a83;
     outline: none;
+}
+
+/* footer section */
+
+.footer {
+    padding: 100px 0;
+    background-color: #061e37;
+
+}
+
+.footer__submenu {
+    display: flex;
+    align-items: center;
+}
+
+.footer__submenu a {
+    opacity: 0.5;
+    color: #ffffff;
+}
+
+.footer__submenu div {
+    width: 6px;
+    height: 6px;
+    background-color: #ffffff;
+    border-radius: 100%;
+    margin: 0 20px;
+}
+
+
+.footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    min-height: 100px;
+}
+
+.footer__first {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer__primary {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer__links i {
+    /* Style for "" */
+    opacity: 0.2;
+    color: #ffffff;
+    font-size: 20px;
+    line-height: 25px;
+}
+
+.footer__links a {
+    margin-left: 10px;
+
 }
