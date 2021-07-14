@@ -6,6 +6,7 @@ import '../css/style.css';
 import UI from "./config/ui.config";
 import slider from "./slider";
 import { popupWindow as popup } from "./popup";
+import forms from "./form";
 
 const {tabs,} = UI;
 window.addEventListener("DOMContentLoaded", () => {
@@ -28,6 +29,7 @@ window.addEventListener("DOMContentLoaded", () => {
     popup('[data-popup]', '.popup');
     smoothscroll.polyfill();
     smoothScrolling();
+    forms('form')
 
 
 // handlers
