@@ -1,10 +1,11 @@
 import 'bootstrap/dist/css/bootstrap-reboot.css';
+import smoothscroll from 'smoothscroll-polyfill';
 
 import '../css/style.css';
 
 import UI from "./config/ui.config";
 import slider from "./slider";
-import popup, { popupWindow } from "./popup";
+import { popupWindow as popup } from "./popup";
 
 const {tabs,} = UI;
 window.addEventListener("DOMContentLoaded", () => {
@@ -25,6 +26,8 @@ window.addEventListener("DOMContentLoaded", () => {
     });
 
     popup('[data-popup]', '.popup');
+    smoothscroll.polyfill();
+    smoothScrolling();
 
 
 // handlers
@@ -41,6 +44,27 @@ window.addEventListener("DOMContentLoaded", () => {
 
         });
 
+    }
+
+    function smoothScrolling() {
+        const anchors = document.querySelectorAll('a[href^="#"]');
+
+        anchors.forEach(anchor => {
+
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault(); // Предотвратить стандартное поведение ссылок
+                // Атрибут href у ссылки, если его нет то перейти к body (наверх не плавно)
+                const goto = anchor.hasAttribute('href') ? anchor.getAttribute('href') : 'body';
+                // Плавная прокрутка до элемента с id = href у ссылки
+
+                document.querySelector(goto).scrollIntoView({
+                        behavior: "smooth",
+                        block: "start"
+                    }
+                );
+            });
+
+        });
     }
 });
 

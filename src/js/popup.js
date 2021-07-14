@@ -45,4 +45,4 @@ function popupWindow(triggerSelector, popupSelector) {
 
 }
 
-export default popupWindow;
+export { popupWindow };
