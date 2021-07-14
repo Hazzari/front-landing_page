@@ -4,7 +4,7 @@ import '../css/style.css';
 
 import UI from "./config/ui.config";
 import slider from "./slider";
-
+import popup, { popupWindow } from "./popup";
 
 const {tabs,} = UI;
 window.addEventListener("DOMContentLoaded", () => {
@@ -24,6 +24,8 @@ window.addEventListener("DOMContentLoaded", () => {
 
     });
 
+    popup('[data-popup]', '.popup');
+
 
 // handlers
 
@@ -41,6 +43,5 @@ window.addEventListener("DOMContentLoaded", () => {
 
     }
 });
-
 
 

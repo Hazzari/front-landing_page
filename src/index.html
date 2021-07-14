@@ -56,7 +56,7 @@
                     consequat.
                 </div>
                 <div class="promo__btns">
-                    <button class="promo__btn promo__btn_black">Buy now
+                    <button data-popup class="promo__btn promo__btn_black">Buy now
                     </button>
                     <button class="promo__btn promo__btn_white">Try for free
                     </button>
@@ -603,5 +603,36 @@
         </div>
     </div>
 </footer>
+<div class="popup hide">
+    <div class="popup__wrap">
+        <div class="popup__form">
+            <form action="#">
+                <div class="form__wrap">
+                    <input type="text" name="firstName" class="form__inp"
+                           placeholder="First Name" autocomplete="off" required>
+                    <input type="text" name="lastName" class="form__inp"
+                           placeholder="Last Name" autocomplete="off" required>
+                </div>
+                <div class="form__wrap">
+                    <input type="email" name="email" class="form__inp"
+                           placeholder="Email" autocomplete="off" required>
+                    <input type="tel" name="phone" class="form__inp"
+                           placeholder="Phone" autocomplete="off">
+                </div>
+                <label><textarea name="message" class="form__message"
+                                 placeholder="Message"
+                                 required></textarea></label>
+                <div class="form__send">
+                    <input type="checkbox" name="subs" id="popup_subs"
+                           class="form__subs">
+                    <label for="popup_subs"> subscribe to the newsletter</label>
+                    <input type="submit" class="form__button-send" value="send">
+                </div>
+            </form>
+        </div>
+        <i data-close class="fas fa-times popup__close"></i>
+    </div>
+
+</div>
 </body>
 </html>
