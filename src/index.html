@@ -8,6 +8,7 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
           integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
           crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet"/>
 </head>
 <body>
 <section class="promo" id="promo">
@@ -64,17 +65,18 @@
                     </button>
                 </div>
             </div>
-            <div class="promo__video">
-                <video width="600" height="320" src="video/promo.mp4"
-                       poster="video/poster.png"></video>
-                <div class="promo__play">
-                    <div>
-                        <i class="fas fa-play"></i>
-                    </div>
+            <div class="promo__video " id="playVideo">
+                <video id="my-video"
+                       class="video-js vjs-default-skin vjs-big-play-centered"
+                       controls
+                       preload="auto"
+                       width="620"
+                       height="350"
+                       poster="video/poster.png"
+                       data-setup="{}">
 
-                    Watch the video
-
-                </div>
+                    <source src="video/promo.mp4" type="video/mp4"/>
+                </video>
             </div>
         </div>
     </div>
@@ -585,10 +587,13 @@
                     <ul class="nav__list">
                         <li class="nav__item "><a href="#promo">Home</a>
                         </li>
-                        <li class="nav__item"><a href="#services">Service</a></li>
-                        <li class="nav__item"><a href="#progress">Extension</a></li>
+                        <li class="nav__item"><a href="#services">Service</a>
+                        </li>
+                        <li class="nav__item"><a href="#progress">Extension</a>
+                        </li>
                         <li class="nav__item"><a href="#useful">Pricing</a></li>
-                        <li class="nav__item nav__item_margin-none"><a href="#contact">Help</a>
+                        <li class="nav__item nav__item_margin-none"><a
+                            href="#contact">Help</a>
                         </li>
                     </ul>
                 </div>
@@ -634,7 +639,6 @@
     </div>
 
 </div>
-
-
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
 </body>
 </html>

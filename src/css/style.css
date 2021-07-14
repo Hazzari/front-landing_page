@@ -201,6 +201,8 @@ h1.promo__title {
 
 .promo__video {
     position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .promo__video > video {
